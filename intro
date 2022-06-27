@@ -1,3 +1,9 @@
-NodeJs is an open source, cross-platform JavaScript runtime environment and library for running web application outside the client's browser
+- NodeJs is an open source, cross-platform JavaScript runtime environment and library for running web application outside the client's browser
 
-It is used for creating server-side application.
+- It is used for creating server-side application.
+
+- Perfect for data intensive, realtime web applications as Node.js never waits for an API to return data
+
+- Better synchronization of code between server and client due to same code base.
+
+- Easy for web developers to start using Node.js in their projects as it is a Javascript library.
