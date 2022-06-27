@@ -15,15 +15,18 @@
 // Express is a flexible Node.js.
 // It can be used to design single-page, multi-page and hybrid web applications.
 
-var express = require("express");
-var app = express();
+const { application } = require("express");
+const express = require("express");
+const app = express();
 
-app.get("/", function (req, res) {
-  res.send("<h2>Mbote-Joseph, Learning NodeJS</h2>");
-});
+// app.get("/", function (req, res) {
+//   res.send("<h2>Ready and energetic to learn NodeJS.</h2>");
+// });
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
-var server = app.listen(8080, function () {
-  console.log("Server is running on port 8080");
-  var host = server.address().address;
-  var port = server.address().port;
+app.use("api/users", require("./routes/api/users"));
+
+app.listen(3000, () => {
+  console.log("Server is running on port 3000");
 });

@@ -12,15 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-var express = require("express");
-var app = express();
+const express = require("express");
+const router = express.Router();
+const uuid = require("uuid");
+const users = require("../../users");
 
-app.get("/", function (req, res) {
-  res.send("<h2>Mbote-Joseph, Learning NodeJS</h2>");
+// get all users
+router.get("/", (req, res) => {
+  res.send(users);
+  //end get all users
 });
 
-var server = app.listen(8080, function () {
-  console.log("Server is running on port 8080");
-  var host = server.address().address;
-  var port = server.address().port;
-});
+module.exports = router;

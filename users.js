@@ -12,15 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-var express = require("express");
-var app = express();
+const users = [
+  { id: 1, name: "John", age: 20, email: "john@gmail.com" },
+  { id: 2, name: "Peter", age: 30, email: "joseph@gmail.com" },
+  { id: 3, name: "Mary", age: 40, email: "mbote@gmail.com" },
+  { id: 4, name: "Bob", age: 50, email: "bob@gmail.com" },
+];
 
-app.get("/", function (req, res) {
-  res.send("<h2>Mbote-Joseph, Learning NodeJS</h2>");
-});
-
-var server = app.listen(8080, function () {
-  console.log("Server is running on port 8080");
-  var host = server.address().address;
-  var port = server.address().port;
-});
+module.exports = users;
