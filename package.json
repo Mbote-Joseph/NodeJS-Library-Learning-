@@ -1,0 +1,22 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mbote-Joseph/NodeJS-Library-Learning-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mbote-Joseph/NodeJS-Library-Learning-/issues"
+  },
+  "homepage": "https://github.com/Mbote-Joseph/NodeJS-Library-Learning-#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
