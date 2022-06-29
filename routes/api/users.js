@@ -15,11 +15,11 @@
 const express = require("express");
 const router = express.Router();
 const uuid = require("uuid");
-const users = require("../../users");
+const users = require("../../Users");
 
 // get all users
 router.get("/", (req, res) => {
-  res.send(users);
+  res.json(users);
   //end get all users
 });
 

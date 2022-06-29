@@ -15,7 +15,6 @@
 // Express is a flexible Node.js.
 // It can be used to design single-page, multi-page and hybrid web applications.
 
-const { application } = require("express");
 const express = require("express");
 const app = express();
 

@@ -12,11 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-const users = [
+const Users = [
   { id: 1, name: "John", age: 20, email: "john@gmail.com" },
   { id: 2, name: "Peter", age: 30, email: "joseph@gmail.com" },
   { id: 3, name: "Mary", age: 40, email: "mbote@gmail.com" },
   { id: 4, name: "Bob", age: 50, email: "bob@gmail.com" },
 ];
 
-module.exports = users;
+module.exports = Users;
